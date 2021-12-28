@@ -1,22 +1,22 @@
 /*
 Autor: Ailton Fidelix
 Data: 12/01/2021
-Revisão: 1.0.0
+RevisÃ£o: 1.0.0
 https://github.com/AiltonFidelix/CRC16-CCITT-Xmodem.git
 */
 #ifndef CRC16_CCITT_h
 #define CRC16_CCITT_h
 
-#include <Arduino.h>              // Inclui biblioteca Arduino.h para utilizar funções da IDE Arduino
+#include <Arduino.h>              // Inclui biblioteca Arduino.h para utilizar funÃ§Ãµes da IDE Arduino
 
 class CRC16_CCITT{
 	public:
-		uint16_t calculate_crc(String dataString);       // Método de calculo CRC
+		CRC16_CCITT();
+		uint16_t calculate_crc(String dataString);       // MÃ©todo de calculo CRC
 		
-	private:                                             //Métodos privados
+	private:                                             //MÃ©todos privados
 		uint16_t calc_crc(char msg[],int n);
 		uint16_t crc_xmodem_update(uint16_t crc, uint8_t data);
 };
 
-extern CRC16_CCITT CRC;
 #endif
