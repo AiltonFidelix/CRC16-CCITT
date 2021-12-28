@@ -6,6 +6,8 @@ https://github.com/AiltonFidelix/CRC16-CCITT-Xmodem.git
 */
 #include <CRC16_CCITT.h>
 
+CRC16_CCITT CRC;
+
 String inputString = "123456789";    //CRC =  0x31C3
 
 void setup() {
