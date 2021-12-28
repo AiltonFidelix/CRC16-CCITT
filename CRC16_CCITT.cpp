@@ -6,7 +6,7 @@ https://github.com/AiltonFidelix/CRC16-CCITT-Xmodem.git
 */
 #include <CRC16_CCITT.h>     // Inclui o biblioteca crc16-ccitt
 
-CRC16_CCITT CRC;
+CRC16_CCITT::CRC16_CCITT(){}
 
 //Método string para char array para calculo do CRC
 uint16_t CRC16_CCITT::calculate_crc(String dataString)
